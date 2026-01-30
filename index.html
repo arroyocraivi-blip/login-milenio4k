@@ -85,15 +85,14 @@
 
   <script>
 function login() {
-  const user = document.getElementById("user").value;
-  const pass = document.getElementById("pass").value;
-  const msg = document.getElementById("msg");
+  const user = document.getElementById("username").value;
+  const pass = document.getElementById("password").value;
 
-  if (user === "admin" && pass === "1234") {
+  if (user === "admin" && pass === "Milenio4K@2026") {
+    localStorage.setItem("sesion", "ok");
     window.location.href = "home.html";
   } else {
-    msg.textContent = "❌ Usuario o contraseña incorrectos";
-    msg.className = "message error";
+    alert("Usuario o contraseña incorrectos");
   }
 }
-</script>
+  </script>
